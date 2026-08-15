@@ -18,3 +18,4 @@
 - [x] Verify responsive visual design and dashboard protection; submit a controlled live booking inquiry, confirm database persistence, and remove it without leaving test data.
 - [x] Save the final project checkpoint and deliver the finished website.
 - [x] Embed the supplied official Askari Event Place Facebook reel responsively in the venue gallery experience.
+- [x] Add the newly supplied official Facebook reel in the highlighted right-side gallery area while retaining the existing reel.

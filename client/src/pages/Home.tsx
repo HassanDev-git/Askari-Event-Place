@@ -191,7 +191,7 @@ export default function Home() {
               <div><p className="text-[11px] font-extrabold uppercase tracking-[0.19em] text-[#eac574]">Inside Askari</p><h2 className="mt-4 font-display text-5xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-6xl">See the scene<br /><em>come together.</em></h2></div>
               <p className="max-w-md text-[14px] leading-6 text-white/72">A glimpse of banquet interiors, seating, lighting, florals, and celebratory décor. Select any photograph to view it in full.</p>
             </div>
-            <div className="mt-12 grid gap-8 xl:grid-cols-[267px_minmax(0,1fr)] xl:items-start">
+            <div className="mt-12 grid gap-8 xl:grid-cols-[267px_minmax(0,1fr)_267px] xl:items-start">
               <article className="mx-auto w-full max-w-[267px] xl:mx-0">
                 <div className="mb-4 flex items-end justify-between gap-4"><div><p className="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#eac574]">Official reel</p><h3 className="mt-1 font-display text-3xl font-semibold">Askari in motion</h3></div><a href="https://www.facebook.com/reel/1033187742439923/" target="_blank" rel="noreferrer" className="shrink-0 text-[10px] font-extrabold uppercase tracking-[0.11em] text-[#f0cf83] transition hover:text-white">Facebook ↗</a></div>
                 <div className="relative aspect-[267/476] overflow-hidden rounded-sm border border-[#eac574]/40 bg-black shadow-[0_18px_42px_rgb(0_0_0/28%)]">
@@ -199,6 +199,12 @@ export default function Home() {
                 </div>
               </article>
               <div className="grid auto-rows-[180px] grid-cols-2 gap-3 sm:auto-rows-[240px] lg:grid-cols-4">{galleryImages.map((image, index) => <button key={image.src} type="button" onClick={() => setLightboxIndex(index)} className={`group relative overflow-hidden rounded-sm text-left focus:outline-none focus:ring-2 focus:ring-[#f0cf83] ${index === 0 ? "col-span-2 row-span-2" : index === 4 ? "col-span-2" : ""}`}><img src={image.src} alt={image.alt} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><span className="absolute inset-0 bg-gradient-to-t from-[#210817]/75 via-transparent to-transparent opacity-85 transition group-hover:bg-[#3a1127]/30" /><span className="absolute inset-x-4 bottom-4 flex translate-y-2 items-center justify-between text-[10px] font-extrabold uppercase tracking-[0.13em] text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100"><span>{image.label}</span><span className="grid h-7 w-7 place-items-center rounded-full bg-white/20"><Camera size={13} /></span></span></button>)}</div>
+              <article className="mx-auto w-full max-w-[267px] xl:mx-0">
+                <div className="mb-4 flex items-end justify-between gap-4"><div><p className="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#eac574]">Official reel</p><h3 className="mt-1 font-display text-3xl font-semibold">More to celebrate</h3></div><a href="https://www.facebook.com/reel/2427901781021729/" target="_blank" rel="noreferrer" className="shrink-0 text-[10px] font-extrabold uppercase tracking-[0.11em] text-[#f0cf83] transition hover:text-white">Facebook ↗</a></div>
+                <div className="relative aspect-[267/476] overflow-hidden rounded-sm border border-[#eac574]/40 bg-black shadow-[0_18px_42px_rgb(0_0_0/28%)]">
+                  <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2427901781021729%2F&show_text=false&width=267&t=0" title="Askari Event Place official Facebook reel: More to celebrate" width="267" height="476" style={{ border: "none", overflow: "hidden" }} scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy" className="absolute inset-0 h-full w-full" />
+                </div>
+              </article>
             </div>
           </div>
         </section>
