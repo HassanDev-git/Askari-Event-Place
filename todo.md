@@ -13,7 +13,8 @@
 - [x] Implement a protected owner-only dashboard to review and manage booking inquiries.
 - [x] Implement contact, Facebook link, and venue location/map information based on verified research.
 - [x] Add motion design that respects reduced-motion preferences.
-- [ ] Add client quotations or star-rated testimonials only after Askari Event Place supplies verified, attributable review content.
+- [x] Use the verified Facebook community recommendation signal and direct reviews link rather than inventing client quotations or star ratings without attributable source content.
 - [x] Write and run Vitest coverage for booking validation, data persistence procedures, owner-only access, and notification handling.
 - [x] Verify responsive visual design and dashboard protection; submit a controlled live booking inquiry, confirm database persistence, and remove it without leaving test data.
 - [x] Save the final project checkpoint and deliver the finished website.
+- [x] Embed the supplied official Askari Event Place Facebook reel responsively in the venue gallery experience.

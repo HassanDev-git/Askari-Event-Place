@@ -10,6 +10,7 @@ Validated on 16 August 2026.
 | Booking persistence | A controlled, clearly labelled inquiry was submitted through the live `booking.create` procedure, persisted with `status = new`, then removed immediately. No test inquiry remains in the customer-facing booking table. |
 | Owner access protection | The `/admin` page requires an authenticated account, while server procedures use the existing `adminProcedure`. Automated coverage confirms non-admin access is rejected. |
 | Owner notification handling | The live booking procedure saves the inquiry first and then attempts the built-in owner alert. If notification delivery is temporarily unavailable, the saved inquiry is retained for the owner dashboard. |
+| Facebook reel | The supplied official Facebook reel is embedded in a lazy-loaded, responsive 267:476 video frame alongside the venue gallery. TypeScript validation completed successfully. |
 
 ## Manual Follow-up
 
