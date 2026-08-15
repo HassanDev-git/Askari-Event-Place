@@ -25,4 +25,27 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const bookingInquiries = mysqlTable("bookingInquiries", {
+  id: int("id").autoincrement().primaryKey(),
+  fullName: varchar("fullName", { length: 120 }).notNull(),
+  phone: varchar("phone", { length: 32 }).notNull(),
+  email: varchar("email", { length: 320 }),
+  eventType: mysqlEnum("eventType", [
+    "Wedding",
+    "Mehndi",
+    "Walima",
+    "Birthday",
+    "Corporate",
+    "Social Celebration",
+    "Other",
+  ]).notNull(),
+  eventDate: varchar("eventDate", { length: 10 }).notNull(),
+  guestCount: int("guestCount").notNull(),
+  specialRequests: text("specialRequests"),
+  status: mysqlEnum("status", ["new", "contacted", "confirmed", "declined", "closed"]).notNull().default("new"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type BookingInquiry = typeof bookingInquiries.$inferSelect;
+export type InsertBookingInquiry = typeof bookingInquiries.$inferInsert;

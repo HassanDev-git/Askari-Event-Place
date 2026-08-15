@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { BookingInquiry, InsertBookingInquiry, InsertUser, bookingInquiries, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,27 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function createBookingInquiry(input: InsertBookingInquiry) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  const result = await db.insert(bookingInquiries).values(input);
+  return result;
+}
+
+export async function listBookingInquiries(): Promise<BookingInquiry[]> {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  return db.select().from(bookingInquiries).orderBy(desc(bookingInquiries.createdAt));
+}
+
+export async function updateBookingInquiryStatus(
+  id: number,
+  status: BookingInquiry["status"],
+) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is not available");
+
+  await db.update(bookingInquiries).set({ status }).where(eq(bookingInquiries.id, id));
+}
