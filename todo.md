@@ -19,3 +19,4 @@
 - [x] Save the final project checkpoint and deliver the finished website.
 - [x] Embed the supplied official Askari Event Place Facebook reel responsively in the venue gallery experience.
 - [x] Add the newly supplied official Facebook reel in the highlighted right-side gallery area while retaining the existing reel.
+- [x] Redesign the gallery composition so the two Facebook reels and venue photography feel balanced and premium.
