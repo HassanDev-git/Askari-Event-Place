@@ -20,3 +20,4 @@
 - [x] Embed the supplied official Askari Event Place Facebook reel responsively in the venue gallery experience.
 - [x] Add the newly supplied official Facebook reel in the highlighted right-side gallery area while retaining the existing reel.
 - [x] Redesign the gallery composition so the two Facebook reels and venue photography feel balanced and premium.
+- [x] Replace the non-working second Facebook reel with the supplied wide reel and combine all venue imagery and video into one cohesive media showcase.
