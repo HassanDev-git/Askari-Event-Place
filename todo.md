@@ -23,3 +23,4 @@
 - [x] Replace the non-working second Facebook reel with the supplied wide reel and combine all venue imagery and video into one cohesive media showcase.
 - [x] Assess Vercel compatibility, add deployment configuration and documentation, and validate the Vercel-specific production build and automated tests.
 - [x] Push the Vercel-ready project source to https://github.com/HassanDev-git/Askari-Event-Place.git.
+- [x] Fix the Vercel TypeScript function build errors and prepare the `/manus-storage/` image proxy for Vercel deployment; production build and tests pass locally.
