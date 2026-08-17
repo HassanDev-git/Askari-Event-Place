@@ -24,3 +24,7 @@
 - [x] Assess Vercel compatibility, add deployment configuration and documentation, and validate the Vercel-specific production build and automated tests.
 - [x] Push the Vercel-ready project source to https://github.com/HassanDev-git/Askari-Event-Place.git.
 - [x] Fix the Vercel TypeScript function build errors and prepare the `/manus-storage/` image proxy for Vercel deployment; production build and tests pass locally.
+- [x] Diagnose and replace the remaining Vercel production image-delivery dependency with verified public release asset URLs so venue imagery displays reliably after deployment.
+- [ ] Commit and push the public release-asset URL migration to the GitHub main branch.
+- [ ] Confirm the Vercel project rebuilds from the updated commit.
+- [ ] Verify hero, story, gallery, and booking imagery on the live Vercel deployment after the rebuild.
