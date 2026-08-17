@@ -22,4 +22,4 @@
 - [x] Redesign the gallery composition so the two Facebook reels and venue photography feel balanced and premium.
 - [x] Replace the non-working second Facebook reel with the supplied wide reel and combine all venue imagery and video into one cohesive media showcase.
 - [x] Assess Vercel compatibility, add deployment configuration and documentation, and validate the Vercel-specific production build and automated tests.
-- [ ] Push the Vercel-ready project source to https://github.com/HassanDev-git/Askari-Event-Place.git.
+- [x] Push the Vercel-ready project source to https://github.com/HassanDev-git/Askari-Event-Place.git.
