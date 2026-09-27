@@ -176,6 +176,14 @@
 }
 
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes reveal-section { from { opacity: 0; transform: translateY(34px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes shimmer-line { from { transform: translateX(-110%); } to { transform: translateX(110%); } }
+
+.reveal-section { opacity: 0; transform: translateY(34px) scale(.985); }
+.reveal-section.is-visible { animation: reveal-section 900ms cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+
+/* Keeps the hero's decorative light moving without distracting from the content. */
+.hero-grain::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / 7%), transparent 65%); transform: translateX(-110%); animation: shimmer-line 9s ease-in-out infinite; }
 @keyframes float-soft { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -188,4 +196,5 @@
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .reveal-section { opacity: 1 !important; transform: none !important; }
 }
